@@ -1,0 +1,197 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUREA - Elegancia Atemporal</title>
+    <meta name="description"
+        content="AUREA: No es solo estilo, es presencia. Descubre nuestras colecciones de moda atemporal y sofisticada.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "lucide": "https://unpkg.com/lucide@latest/dist/esm/lucide.js",
+                "lucide-preact": "https://unpkg.com/lucide-preact@latest/dist/esm/lucide-preact.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">AUREA</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#collection">Colección</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button aria-label="Buscar"><i data-lucide="search"></i></button>
+                <button aria-label="Wishlist"><i data-lucide="heart"></i></button>
+                <button aria-label="Carrito de compras"><i data-lucide="shopping-bag"></i></button>
+            </div>
+            <button class="hamburger" aria-label="Abrir menú">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Elegancia veraniega</h1>
+                <p class="hero-subtitle">Descubre la nueva colección</p>
+                <a href="#collection" class="cta-button">COMPRA AHORA</a>
+            </div>
+        </section>
+
+        <section id="collection" class="product-collection">
+            <div class="container">
+                <h2>Nuestra Colección</h2>
+                <div class="filters">
+                    <button class="filter-btn active">Todo</button>
+                    <button class="filter-btn">Hombre</button>
+                    <button class="filter-btn">Mujer</button>
+                    <button class="filter-btn">Accesorios</button>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product-image-1.png" alt="Prenda elegante para mujer">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                                <button class="add-to-cart-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Vestido de Seda Ivory</h3>
+                            <p class="price">$250.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product-image-2.png" alt="Prenda elegante para hombre">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                                <button class="add-to-cart-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Camisa Lino Azul Marino</h3>
+                            <p class="price">$180.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product-image-3.png" alt="Accesorio elegante">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                                <button class="add-to-cart-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bolso de Piel Dorado</h3>
+                            <p class="price">$320.00</p>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="product-image-4.png" alt="Prenda elegante para mujer 2">
+                            <div class="product-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                                <button class="add-to-cart-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Blazer Estructurado</h3>
+                            <p class="price">$450.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="team-image.png" alt="El equipo creativo de AUREA">
+                </div>
+                <div class="about-text">
+                    <h2>Nosotros</h2>
+                    <p>Símbolo de sofisticación y belleza, nos dedicamos a crear prendas atemporales para ocasiones
+                        especiales.</p>
+                    <p class="slogan">No es solo estilo, es presencia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Enviar</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Visita Nuestro Showroom</h3>
+                        <p>Calle de la Elegancia, 123, Madrid, España</p>
+                        <div class="map-placeholder">
+                            <p>Mapa aquí</p>
+                        </div>
+                        <h3>Síguenos</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+                            <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 AUREA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="newsletter-popup" class="newsletter-popup" role="dialog" aria-modal="true" hidden>
+        <div class="newsletter-content">
+            <button id="close-popup" class="close-popup-btn" aria-label="Cerrar">&times;</button>
+            <h2>10% de Descuento</h2>
+            <p>Suscríbete a nuestro boletín y recibe un 10% de descuento en tu primera compra.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit" class="cta-button">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+
+    <button class="chat-button" aria-label="Abrir chat">
+        <i data-lucide="message-square"></i>
+    </button>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
